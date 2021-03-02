@@ -1,0 +1,53 @@
+.author{
+    width: 80%;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.19);
+    padding: 1vh 5%;
+    margin: 2vh auto;
+    background-color: rgb(255, 255, 255);
+   .author-profile{
+       display: flex;
+       width: 90%;
+       margin: 2vh auto;
+       justify-content: space-around;
+       .author-details{     
+        height: 300px;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+       }
+   }
+   .author-posts{
+        width: 80%;
+        padding: 2vh 5%;
+        margin: 6vh auto;
+        background-color: rgb(238, 238, 238);
+        color: black;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3vh 5%;
+        flex-direction: column;
+        justify-content: space-evenly;
+            .posts{
+                flex-wrap: wrap;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .post{
+                width: 25%;
+                margin: 3vh 2%;
+            } 
+    }
+   span{
+       color: rgb(194,24,91);
+    }
+   .btn{
+        margin: 5vh auto;
+        width: 15%;
+        height: 6vh;
+        background-color: rgb(255, 255, 0);
+        color: rgb(77, 77, 77);
+    }
+}

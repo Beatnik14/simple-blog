@@ -1,0 +1,10 @@
+<mat-card class="example-card">
+  <mat-card-header class="card-header">
+    <mat-card-title>{{singlePost.title | shorten: 30}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="imageApiUrl+singlePost.id+'/200/150'" [alt]="singlePost.title">
+  <mat-card-actions class="action">
+    <button mat-raised-button class="btn" color="primary"
+      [routerLink]="['/post',singlePost.id,singlePost.userId]">Read</button>
+  </mat-card-actions>
+</mat-card>

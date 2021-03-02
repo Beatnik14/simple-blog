@@ -1,0 +1,22 @@
+.example-card {
+    width:90%;
+  .card-header{
+    height: 8vh;
+  }
+  img{
+    height: 250px;
+    object-fit: cover;
+  }
+  .example-header-image {   
+    background-size: cover;
+  }
+  .action{
+    display: flex;
+    justify-content: center;
+  }
+  .btn{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+  

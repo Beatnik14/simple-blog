@@ -1,0 +1,51 @@
+.card{
+    width: 60%;
+    margin: 5vh auto;
+    padding: 5vh 5%;
+    .content{
+        display: flex;
+        width: 90%;
+        margin: 4vh 0;
+        justify-content: space-between;
+      }
+    .author-name{
+        color:rgb(194,24,91);
+        cursor: pointer;
+    }
+    .author-name:focus{
+        outline: none;
+    }
+    .post-img{
+        border-radius: 5px;
+        width: 30%;
+        height: 30vh;
+        object-fit: cover;
+    }
+    .content-txt{
+        border-radius: 2px;
+        width: 60%;
+        object-fit: cover;
+        max-height: 30vh;
+    }
+    .comment-section{
+        width: 90%;
+        padding: 2vh 5%;
+        margin: 2vh auto;
+        background-color: rgb(238, 238, 238);
+        color: black;
+        border-radius: 5px;
+
+    }
+    .comment-title{
+        display: flex;
+        justify-content: space-between;
+    }
+    .comment-name{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        margin: 3vh auto;
+        background-color: white;
+        border-radius: 5px;
+        padding: 2vh 5%;
+    }
+  
+}

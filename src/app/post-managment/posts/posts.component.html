@@ -1,0 +1,4 @@
+<div *ngIf="posts$ | async as posts" class="posts" >
+    <app-single-post class = "post" *ngFor="let post of posts" [singlePost]="post"></app-single-post>
+</div>
+<button mat-raised-button *ngIf = "loadAble" class="btn" (click) = "onLoadMore()">Load More</button>

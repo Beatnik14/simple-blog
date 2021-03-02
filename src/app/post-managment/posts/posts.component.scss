@@ -1,0 +1,19 @@
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh 5%;
+    justify-content: space-between;
+    .post{
+        width: 20%;
+        margin: 3vh 2%;
+    }
+
+}
+.btn{
+    display: block;
+    margin: 1vh auto 6vh auto;
+    width: 15%;
+    height: 6vh;
+    background-color: rgb(255, 255, 0);
+    color: rgb(77, 77, 77);
+}

@@ -1,0 +1,22 @@
+<div class="form">
+  <h1 mat-dialog-title>Add Comment</h1>
+  <div mat-dialog-content>
+    <p>What's your favorite animal?</p>
+    <mat-form-field>
+      <mat-label>Name:</mat-label>
+      <input matInput [(ngModel)]="data.name">
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput [(ngModel)]="data.email">
+    </mat-form-field> <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Comment</mat-label>
+      <textarea matInput [(ngModel)]="data.body"></textarea>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Save</button>
+  </div>
+</div>

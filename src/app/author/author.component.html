@@ -1,0 +1,19 @@
+<div class="author" *ngIf="posts$ | async as posts ">
+    <div class="author-profile">
+        <img src="https://picsum.photos/300" alt="">
+        <div class="author-details" *ngIf="author$ | async as author">
+            <h1> <span> Name: </span>{{author.name}}</h1>
+            <h1> <span> Username: </span>{{author.username}}</h1>
+            <h1> <span> Email: </span> {{author.email}}</h1>
+            <h1> <span> Address: </span></h1>
+            <h1> <span> City: </span>{{author.address.city}},</h1>
+            <h1> <span> street: </span>{{author.address.street}}</h1>
+        </div>
+    </div>
+    <div class="author-posts">
+        <div class="posts">
+            <app-single-post class="post" *ngFor="let post of posts" [singlePost]="post"></app-single-post>
+        </div>
+        <button mat-raised-button *ngIf="loadAble" class="btn" (click)="onLoadMore()">Load More</button>
+    </div>
+</div>
